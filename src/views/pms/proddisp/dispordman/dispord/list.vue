@@ -41,18 +41,18 @@
       <el-table-column label="优先级">
         <template slot-scope="scope">
           {{
-          scope.row.proproty === "1" ? '一级' :
-          scope.row.proproty === "2" ? '二级' :
-          scope.row.proproty === "3" ? '三级' : '四级'
+          scope.row.proproty === 1 ? '一级' :
+          scope.row.proproty === 2 ? '二级' :
+          scope.row.proproty === 3 ? '三级' : '四级'
           }}
         </template>
       </el-table-column>
       <el-table-column label="专业类型">
         <template slot-scope="scope">
           {{
-          scope.row.rtcw === "1" ? '生产调度指令' :
-          scope.row.rtcw === "2" ? '安全调度指令' :
-          scope.row.rtcw === "3" ? '开工调度指令' : '培训调度指令'
+          scope.row.rtcw === 1 ? '生产调度指令' :
+          scope.row.rtcw === 2 ? '安全调度指令' :
+          scope.row.rtcw === 3 ? '开工调度指令' : '培训调度指令'
           }}
         </template>
       </el-table-column>
