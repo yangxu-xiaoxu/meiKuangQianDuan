@@ -41,9 +41,9 @@
       <el-table-column label="优先级">
         <template slot-scope="scope">
           {{
-          scope.row.priority === "1" ? '一级' :
-          scope.row.priority === "2" ? '二级' :
-          scope.row.priority === "3" ? '三级' : '四级'
+          scope.row.proproty === "1" ? '一级' :
+          scope.row.proproty === "2" ? '二级' :
+          scope.row.proproty === "3" ? '三级' : '四级'
           }}
         </template>
       </el-table-column>
@@ -92,7 +92,7 @@
         <el-row>
           <el-col :span="12">
             <el-form-item label="优先级">
-              <el-select v-model="dispOrd.priority" clearable placeholder="请选择">
+              <el-select v-model="dispOrd.proproty" clearable placeholder="请选择">
                 <el-option :value="1" label="一级"/>
                 <el-option :value="2" label="二级"/>
                 <el-option :value="3" label="三级"/>
@@ -102,7 +102,7 @@
           </el-col>
           <el-col :span="12">
             <el-form-item label="专业类型">
-              <el-select v-model="dispOrd.specType" clearable placeholder="请选择">
+              <el-select v-model="dispOrd.rtcw" clearable placeholder="请选择">
                 <el-option :value="1" label="生产调度指令"/>
                 <el-option :value="2" label="安全调度指令"/>
                 <el-option :value="3" label="开工调度指令"/>
@@ -121,7 +121,7 @@
         <el-row>
           <el-col :span="24">
             <el-form-item label="指令描述">
-              <el-input v-model="dispOrd.orderDesc" :rows="10" type="textarea"/>
+              <el-input v-model="dispOrd.orderCbd" :rows="10" type="textarea"/>
             </el-form-item>
           </el-col>
         </el-row>
