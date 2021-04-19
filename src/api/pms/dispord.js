@@ -14,7 +14,6 @@ export  default {//定义调用后端接口的方法
   },
   //添加
   addDispOrd(dispOrd){
-    alert(dispOrd)
     return request({
 
       url:`${api_name}`,

@@ -5,7 +5,7 @@
         <el-row>
           <el-col :span="12">
             <el-form-item label="优先级">
-              <el-select v-model="dispOrd.priority" clearable placeholder="请选择">
+              <el-select v-model="dispOrd.proproty" clearable placeholder="请选择">
                 <el-option :value="1" label="一级"/>
                 <el-option :value="2" label="二级"/>
                 <el-option :value="3" label="三级"/>
@@ -60,7 +60,9 @@
   export default {
     data(){
       return{
-        dispOrd:{},
+        dispOrd:{
+          rtcw:''
+        },
         saveBtnDisabled:false,
 
       }
